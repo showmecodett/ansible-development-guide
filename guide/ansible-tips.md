@@ -15,7 +15,7 @@ hosts=${host:-all}
 将Playbook任务高内聚，一个Palybook完成一个任务。
 结构清晰，容易维护，适合复用。
 
-代码示例：`/project/roles/install-web-server`
+代码示例：[Install Web Server](/project/roles/install-web-server)
 
 * 执行：`ansible-playbook -i project/inventory/hosts project/install_web_server.yml`
 
