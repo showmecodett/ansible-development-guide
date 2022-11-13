@@ -1,0 +1,4 @@
+---
+- name: Init environment
+  debug:
+    msg: 'Init environment'

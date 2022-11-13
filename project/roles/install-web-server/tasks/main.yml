@@ -1,0 +1,8 @@
+---
+- import_tasks: init.yml
+
+- import_tasks: install_db.yml
+
+- import_tasks: install_server.yml
+
+- import_tasks: check.yml

@@ -1,0 +1,5 @@
+---
+- name: Install Web Server
+  hosts: all
+  roles:
+    - install-web-server
