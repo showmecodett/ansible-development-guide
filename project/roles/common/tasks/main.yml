@@ -1,0 +1,3 @@
+---
+- import_tags: ping.yml
+  tags: ping

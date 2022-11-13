@@ -19,5 +19,14 @@ hosts=${host:-all}
 
 * 执行：`ansible-playbook -i project/inventory/hosts project/install_web_server.yml`
 
+## 善用Ping模块
+在跑Ansible任务时，可以通过Ping模块及早发现网络问题.
+
+将Ping模块做成公共Role，在其他Playbook中调用
+
+代码示例：[Update Software](/project/update_software.yml)
+
+* 执行：`ansible-playbook -i project/inventory/hosts project/update_software.yml`
+
 # 参考
 * [幾個小建議改善你的 Ansible 技能](https://blog.pichuang.com.tw/20180622-suggestions_to_improve_your_ansible_playbook/)

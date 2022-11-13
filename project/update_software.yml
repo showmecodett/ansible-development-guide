@@ -1,0 +1,12 @@
+---
+- name: Update Software
+  gather_facts: no
+  hosts: all
+  tasks:
+    - import_role:
+        name: common
+        tasks_from: ping
+
+    - name: Update Software
+      debug:
+        msg: 'Update Software'

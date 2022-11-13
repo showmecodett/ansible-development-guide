@@ -1,0 +1,7 @@
+---
+- name: Test connectivity
+  ping:
+  register: result
+- name: Print result
+  debug:
+    msg: "{{ result }}"
